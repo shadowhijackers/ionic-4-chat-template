@@ -12,9 +12,9 @@ const routes: Routes = [
     path: 'tabs',
     component: TabsPage,
     children:[
-     { path: 'notifications', loadChildren: '../notifications/notifications.module#NotificationsPageModule' },
-     { path: 'message', loadChildren: '../message/message.module#MessagePageModule' },
-     { path: 'home', loadChildren: '../home/home.module#HomePageModule' },
+     { path: 'notifications', loadChildren: () => import('../notifications/notifications.module').then(m => m.NotificationsPageModule) },
+     { path: 'message', loadChildren: () => import('../message/message.module').then(m => m.MessagePageModule) },
+     { path: 'home', loadChildren: () => import('../home/home.module').then(m => m.HomePageModule) },
     ]
   },
   {
