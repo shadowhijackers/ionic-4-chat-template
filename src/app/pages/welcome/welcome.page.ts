@@ -20,4 +20,15 @@ export class WelcomePage implements OnInit {
     this.router.navigateByUrl('/sign-up')
   }
 
+    facebookLogin() {
+
+    }
+
+  googleLogin() {
+
+  }
+
+  out() {
+
+  }
 }
