@@ -1,4 +1,4 @@
-# ionic 4 chat template
+# ionic 4 and angular 9 chat template
 
 
 ### Show some :heart: and star the repo to support the project
